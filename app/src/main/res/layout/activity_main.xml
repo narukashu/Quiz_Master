@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <RadioGroup
+            android:id="@+id/radioGroupOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/CustomText"
+                android:text="Q1.What is the S.I.Unit of Current?" />
+
+
+            <RadioButton
+                android:id="@+id/radioAnsOne"
+                style="@style/CustomRadio"
+                android:text="Ohm" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="imp" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Watt" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Joule" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/CustomText"
+                android:text="Q2.How many Watts are their in 1 HorsePower?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="362 Watts" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="752 Watts" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="763 Watts" />
+
+            <RadioButton
+                android:id="@+id/radioAnsTwo"
+                style="@style/CustomRadio"
+                android:text="746 Watts" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupThree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="Q3. Who among the following gave the Uncertainity principle?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="R.A Milkman" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Ernset Rutherford" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text=" S.N Bose" />
+
+            <RadioButton
+                android:id="@+id/radioAnsThree"
+                style="@style/CustomRadio"
+                android:text="Werner Heisenberg" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="Q4. What is the force of attraction between any two bodies by virtue of their masses is called?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Electromagnetic Force" />
+
+            <RadioButton
+                android:id="@+id/radioAnsFour"
+                style="@style/CustomRadio"
+                android:text="Gravitational Force" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text=" Centripetal Force" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="Nuclear Force" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/CustomText"
+                android:text="Q5. 1 femto metre is equal to how many metres?" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="10-12" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text="10-14" />
+
+            <RadioButton
+                android:id="@+id/radioAnsFive"
+                style="@style/CustomRadio"
+                android:text=" 10-15" />
+
+            <RadioButton
+                style="@style/CustomRadio"
+                android:text=" 1-24" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/CustomText"
+            android:text="Q6. Choose all the examples of carbohydrates." />
+
+        <CheckBox
+            android:id="@+id/checkAns1"
+            style="@style/CustomRadio"
+            android:text="Galactose" />
+
+        <CheckBox
+            android:id="@+id/checkAns4"
+            style="@style/CustomRadio"
+            android:text="Fructose" />
+
+        <CheckBox
+            android:id="@+id/checkAns2"
+            style="@style/CustomRadio"
+            android:text="Surcrose" />
+
+        <CheckBox
+            android:id="@+id/checkAns3"
+            style="@style/CustomRadio"
+            android:text="Maltose" />
+
+        <TextView
+            style="@style/CustomText"
+            android:text="Q7.Physics is the study of _________ and matter in space and time" />
+
+        <EditText
+            android:id="@+id/checkAns7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Put Your answer here" />
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="submit_answer"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textSize="24sp" />
+    </LinearLayout>
+</ScrollView>
